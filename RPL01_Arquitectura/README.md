@@ -1,5 +1,7 @@
 # Aportaciones por integrante
-  * Bernal Servin Alonso
+<!-- Blockquote -->
+> * Bernal Servin Alonso
+
   * Roa Jimenez Eduardo Yared
      * Arquitectura ANSI/SPARC
      * Una arquitectura centralizada DBMS genérica 
