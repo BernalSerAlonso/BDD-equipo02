@@ -8,10 +8,10 @@
 B.Partner (2021, Oct 10). Architecture Model of Distributed [Online]. Available: https://benchpartner.com/architecture-model-of-distributed
 M.C. Fernando Pech May, "Bases de Datos Distribuidas -Panorama ", presentada en la 5th Conferencia en el  Instituto Tecnologico Superior, De los Rios, Enero 2022.
 ```
-    * Zamora Florez Rafael
-       *Alternativas arquitectónicas
-       *Sistemas cliente /servidor
-       *Sistema peer to peer
+   * Zamora Florez Rafael
+       * Alternativas arquitectónicas
+       * Sistemas cliente/servidor
+       * Sistema peer to peer
 ```
 Shafer, L. S. (s. f.). Distributed Database Managment Systems. onlinelibrary. Recuperado 9 de marzo de 2022, de https://onlinelibrary.wiley.com/doi/pdf/10.1002/9780470602379.fmatte
 
