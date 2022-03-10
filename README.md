@@ -3,5 +3,12 @@ Repocitorio dedicado y creado para almacenar las `practicas` y un `proyecto`, cr
 Integrantes:
   * Bernal Servin Alonso
   * Roa Jimenez Eduardo Yared
+    -Arquitectura ANSI/SPARC
+    -Una arquitectura centralizada DBMS genérica 
+    -Modelos arquitectónicos para DBMS distribuidos
+    
+    B.Partner (2021, Oct 10). Architecture Model of Distributed [Online]. Available: https://benchpartner.com/architecture-model-of-distributed
+    M.C. Fernando Pech May, "Bases de Datos Distribuidas -Panorama ", presentada en la 5th Conferencia en el  Instituto Tecnologico Superior, De los Rios, Enero 2022.
+    
   * Zamora Florez Rafael
 
