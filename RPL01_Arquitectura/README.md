@@ -1,14 +1,15 @@
 # Aportaciones por integrante
 
-## Bernal Servin Alonso```
+## Bernal Servin Alonso
 
 
 <!-- Horizontal Rule -->
 ___
-## Roa Jimenez Eduardo Yared```
-     + Arquitectura ANSI/SPARC
-     + Una arquitectura centralizada DBMS genérica 
-     + Modelos arquitectónicos para DBMS distribuidos
+
+## Roa Jimenez Eduardo Yared
+* Arquitectura ANSI/SPARC
+* Una arquitectura centralizada DBMS genérica 
+* Modelos arquitectónicos para DBMS distribuidos
      
 <!-- Blockquote -->
 > B.Partner (2021, Oct 10). Architecture Model of Distributed [Online]. Available: https://benchpartner.com/architecture-model-of-distributed
@@ -16,10 +17,11 @@ M.C. Fernando Pech May, "Bases de Datos Distribuidas -Panorama ", presentada en 
 
 <!-- Horizontal Rule -->
 ___
+
 ## Zamora Florez Rafael
-     + Alternativas arquitectónicas
-     + Sistemas cliente/servidor
-     + Sistema peer to peer
+* Alternativas arquitectónicas
+* Sistemas cliente/servidor
+* Sistema peer to peer
        
 <!-- Blockquote -->
 >Shafer, L. S. (s. f.). Distributed Database Managment Systems. onlinelibrary. Recuperado 9 de marzo de 2022, de https://onlinelibrary.wiley.com/doi/pdf/10.1002/9780470602379.fmatte
