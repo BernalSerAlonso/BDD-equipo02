@@ -1,35 +1,27 @@
-Use Europe
-/*
-CREATE DATABASE Europa_Pacifico
+--creacion de la base de datos PARA EL FRAGMENTO EUROPE
+CREATE DATABASE Europe
 GO
-
-use Europa_Pacifico
-GO*/
---SE USÓ PARA REPLICAR LAS TABLAS NECESARIAS PARA LAS CONSULTAS EN LOS FRAGMENTOS DE NorteAmerica y Europe
-create schema Production 
+--SHARDING REALIZADO EN EL SERVIDOR VINCULADO -> DESKTOP-FAT50UF\BDD01
+use Europe
+GO
+-- CREAMOS LOS ESQUEMAS SALES Y PRODUCTION PARA LOS FRAGMENTOS CORRESPONDIENTES DE LAS TABLAS
 create schema Sales
---REPLICA DE SpecialOffer
-SELECT so.* INTO Sales.SpecialOffer
-FROM AdventureWorks2019.Sales.SpecialOffer so
-go
---REPLICA DE SpecialOfferProduct
-SELECT sop.* INTO Sales.SpecialOfferProduct
-FROM AdventureWorks2019.Sales.SpecialOfferProduct sop
-go
---REPLICA DE SalesPerson
-SELECT sp.* INTO Sales.SalesPerson
-FROM AdventureWorks2019.Sales.SalesPerson sp
-go
---REPLICA DE Product
-SELECT p.* INTO Production.Product
-FROM AdventureWorks2019.Production.Product p
-go
---REPLICA DE ProductCategory
-SELECT pc.* INTO Production.ProductCategory
-FROM AdventureWorks2019.Production.ProductCategory pc
-go
---REPLICA DE ProductSubcategory
-SELECT psc.* INTO Production.ProductSubcategory
-FROM AdventureWorks2019.Production.ProductSubcategory psc
-go
+create schema Production
 
+-- FRAGMENTO DE CUSTOMER CORRESPONDIENTE A EUROPE -> TerritoryID=7,8,9
+SELECT c.* INTO Sales.Customer
+FROM AdventureWorks2019.Sales.Customer c
+where TerritoryID IN (7,8,10)
+--FRAGMENTO DE SalesOrderHeader CORRESPONDIENTE A [GROUP] EN SalesTerritory -> 'EUROPE'
+SELECT ORH.* INTO Sales.SalesOrderHeader
+FROM AdventureWorks2019.Sales.SalesOrderHeader ORH
+WHERE TerritoryID in (SELECT TerritoryID
+						FROM AdventureWorks2019.Sales.SalesTerritory
+						WHERE [Group]='EUROPE') 
+
+--Fragmento SalesOrderDetail Pacifico A PARTIR DE UN JOIN DE SalesOrderDetail CON EL FRAGMENTO DE SalesOrderHeader CORRESPONDIENTE EUROPE
+SELECT DISTINCT sod.* INTO Sales.SalesOrderDetail
+FROM AdventureWorks2019.Sales.SalesOrderDetail sod
+JOIN (SELECT * FROM Europe.Sales.SalesOrderHeader) st
+ON sod.SalesOrderID = st.SalesOrderID
+GO
