@@ -1,0 +1,10 @@
+## Fragmentacion
+
+[Carpeta Fragmentacion](https://github.com/BernalSerAlonso/BDD-equipo02/tree/main/Fragmentacion)
+
+- Reporte Fragmentacion equipo 2.pdf
+- ConsultasFragmentacion.sql
+- Europ.sql
+- NorteAmerica.sql
+- Pacifico.sql
+- TablasNoFragmentadas

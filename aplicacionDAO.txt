@@ -1,0 +1,8 @@
+## Aplicacion utilizando patron DAO
+
+[Carpeta AplicacionDAO](https://github.com/BernalSerAlonso/BDD-equipo02/tree/main/AplicacionDAO)
+
+- AdventureWorks2019Production1.zip
+- AdventureWorks2019Sales1.zip
+- Stored_procedures.sql
+- ApplicatiionDAO
