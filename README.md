@@ -29,7 +29,7 @@ Integrantes:
 
 ## Planes de Ejecucion COVID
 
-[Carpeta Fragmentacion](https://github.com/BernalSerAlonso/BDD-equipo02/tree/main/PlanesDeEjecucion)
+[Carpeta Planes de Ejecucion](https://github.com/BernalSerAlonso/BDD-equipo02/tree/main/PlanesDeEjecucion)
 
 - PlanesDeEjecucion.sql
 - PlanesEjecucion.pdf
